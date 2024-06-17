@@ -9,7 +9,7 @@ function sendwhatsapt(){
     var destinat=document.getElementById("destinat").value;
    var subject =document.getElementById("subject").value;
     var phone=document.getElementById("Phone").value;
-
+    var person=document.getElementById("person").value;
 
 if(name==""){
     alert("Enter your name first")
@@ -25,6 +25,10 @@ else if(subject==""){
 else if(phone==""){
     alert("Enter your phone number first")
 }
+else if(person==""){
+    alert("Enter your person number first")
+}
+
 else{
     // alert(phone);
    
@@ -33,6 +37,7 @@ else{
     
     "Book my cab %0a%0aName: "+ name+
     "%0aDestination: "+ destinat+
+    "%0aNo. of person: "+ person+
     "%0aDetails: "+subject+
     "%0aPhone:"+phone
 
